@@ -1,10 +1,10 @@
 fn main() {
-    const W: usize = 40; // Ширина конверта (від 10 до 80)
-    const H: usize = 20; // Висота конверта (від 10 до 80)
+    const W: usize = 40;
+    const H: usize = 20; 
 
     let mut canvas = vec![vec![' '; W]; H];
 
-    // Контур
+    // контур
     for x in 0..W {
         canvas[0][x] = '*';
         canvas[H - 1][x] = '*';
